@@ -1,2 +1,1 @@
-# rsschool-cv
-Repository for task "Markdown &amp; Git" rsschool
+https://levanovaelena.github.io/rsschool-cv/cv
