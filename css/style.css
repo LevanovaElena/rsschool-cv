@@ -50,7 +50,7 @@ a, a:hover{   text-decoration: none;}
 
     font-style: italic;
 
-    background: url(/img/header_fon_black.jpg) center center no-repeat;
+    background: url(../img/header_fon_black.jpg) center center no-repeat;
 }
 .header .gday{
     margin-left:254px;
@@ -245,23 +245,23 @@ a, a:hover{   text-decoration: none;}
 }
 /*------------------IMG ON HOVER-------------------------*/
 a.work1:hover {
-    background: url(/img/portfolio/3.jpg);
+    background: url(../img/portfolio/3.jpg);
     z-index: 999;
    }
    a.work2:hover {
-    background: url(/img/portfolio/1.jpg);
+    background: url(../img/portfolio/1.jpg);
     z-index: 999;
    }
    a.work3:hover {
-    background: url(/img/portfolio/2.jpg);
+    background: url(../img/portfolio/2.jpg);
     z-index: 999;
    }
    a.work4:hover {
-    background: url(/img/portfolio/4.jpg);
+    background: url(../img/portfolio/4.jpg);
     z-index: 999;
    }
    a.work5:hover {
-    background: url(/img/portfolio/any.jpg);
+    background: url(../img/portfolio/any.jpg);
     z-index: 999;
    }
 
