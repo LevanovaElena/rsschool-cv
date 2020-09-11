@@ -1,0 +1,281 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    margin-block-start:0;
+    margin-block-end:0;
+}
+
+.container{
+    position: relative;
+    margin: 0 auto;
+    width: 1024px;
+}
+
+a, a:hover{   text-decoration: none;}
+
+.icon{
+    width: 50px;
+    height: 50px;
+}
+
+/*///////////////MENU////////////////////*/
+.mainMenu{
+    position: fixed;
+    z-index: 999;
+    padding:5px;
+    min-height: 50px;
+    width: 1024;
+
+    background-color:gray;
+  }
+.mainMenu div a
+{
+    padding:5px;
+
+    text-align: center;
+    color:white;
+    font-family: "Open Sans";
+    font-size: small;
+    font-weight: bold;
+}
+
+.mainMenu div{  margin-top:5px;}
+
+/*//////////////////////////////HEADER////////////////////////////////*/
+.header{
+    padding: 144px 0 182px 0;
+    height: 443px;
+    width: 1024;
+
+    font-style: italic;
+
+    background: url(/img/header_fon_black.jpg) center center no-repeat;
+}
+.header .gday{
+    margin-left:254px;
+    color: #333333;
+    font-family: Verdana;
+    font-size: 30px;
+    text-transform: uppercase;
+
+}
+.header .title{
+    margin-top: 10px;
+    text-align: center;
+    color: #333333;
+    font-family: Verdana;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.header .position{
+    margin-top: 10px;
+    margin-left:254px;
+    color: #333;
+    font-family: Verdana;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+/*///////////////////ITEMS WITH WHITE FON/////////////////////////////////////////////*/
+.whiteItem 
+{
+    width: 585px;
+    padding: 25px;
+    border: 1px solid black;
+}
+
+.whiteItem .line , 
+.shadowedItem .line{
+    width: 25px; 
+    height: 1px; 
+    margin: 15px 0 15px 13px; 
+    background: #000; 
+    border: 0; 
+}
+
+.whiteItem h2{
+    margin-top:10px;
+    margin-left:13px;
+    color: #333333;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+}
+.whiteItem h3{
+    color: #333333;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+}
+.whiteItem .text{
+    margin-top:15px;
+    color: #333333;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/*////////////////////ITEMS WITH SHADOW FON///////////////////////////////////////////////*/
+.shadowedItem{
+    position: relative;
+    width: 350px;
+    min-height: 470px;
+    padding: 15px;
+    border: 1px solid black;
+    background: url(../img/shadowedItem_fon.png) center center/cover no-repeat;
+
+}
+.shadowedItem .foto{
+    display: block;
+    margin:0 auto;
+}
+.shadowedItem h2{
+    margin-top: 20px;
+    color: #333333;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: bold;
+}
+.shadowedItem p{
+    margin-top: 5px;
+    color: #333333;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 400;
+}
+.shadowedItem .bottomIcon{
+    position: absolute;
+    bottom:10px;
+    right:15px;
+}
+.shadowedItem .shadowText{
+    margin-top:15px;
+    margin-bottom: 15px;
+    color: #333333;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/*/////////////////////////SECTION ABOUT ME///////////////////////////////////*/
+.aboutMe {
+    display: flex;
+    justify-content: space-between;
+    margin-top:40px;
+}
+.aboutMe .whiteItem
+{
+    width: 585px;
+    height: 450px;
+}
+
+/*//////////////////////////SECTION SKILLS AND EDUCATION///////////////////////////////////////////////////*/
+.knowledge {
+    display: flex;
+    justify-content: space-between;
+    margin-top:40px;
+}
+
+.knowledge .shadowedItem{  height: 80%;}
+/*------ITEMS INTO EDUCATION------*/
+.whiteItem .itemsPlaceOfEducation .item
+{
+    margin-top:10px;
+    position: relative;
+}
+.whiteItem .itemsPlaceOfEducation .item .circle
+{
+    position: absolute;
+    left:-35px;
+}
+.whiteItem .itemsPlaceOfEducation .item .text{max-width: 70%;}
+.whiteItem .itemsPlaceOfEducation .item .years{
+    position: absolute;
+    right: -10px;
+    top: 40%;
+    color: #cccccc;
+    font-family: "Open Sans";
+    font-size: 36px;
+    font-weight: bold;
+}
+/*///////////////////////SECTION CODE/////////////////////////////////////////////////*/
+.another_information{ margin-top:40px;}
+
+.another_information .whiteItem { width: 100%;}
+
+.another_information .whiteItem .itemMyWorks
+{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/*---------ITEMS INTO CODE EXAMPLE------------------------------------*/
+.another_information .itemMyWorks .shadowedItem{
+    width: 315px;
+    min-height: 267px;
+    margin-top:15px;
+   text-align: center;
+   padding-top:8%;
+}
+.another_information .itemMyWorks .shadowedItem .shadowText{
+    z-index: 2;
+    position: relative;
+}
+.another_information .itemMyWorks .shadowedItem img{
+    z-index: 2;
+    position: relative;
+}
+.another_information .itemMyWorks a{
+    position: absolute;
+    display: block;
+    width: 315px;
+    height: 267px;
+    top:-2px;
+    left:0;
+    text-decoration: none;
+    
+}
+/*------------------IMG ON HOVER-------------------------*/
+a.work1:hover {
+    background: url(/img/portfolio/3.jpg);
+    z-index: 999;
+   }
+   a.work2:hover {
+    background: url(/img/portfolio/1.jpg);
+    z-index: 999;
+   }
+   a.work3:hover {
+    background: url(/img/portfolio/2.jpg);
+    z-index: 999;
+   }
+   a.work4:hover {
+    background: url(/img/portfolio/4.jpg);
+    z-index: 999;
+   }
+   a.work5:hover {
+    background: url(/img/portfolio/any.jpg);
+    z-index: 999;
+   }
+
+   /*////////////////FOOTER/////////////////////////////*/
+   .footer{
+        padding:10px;
+        margin-top:20px ;
+        background-color:gray;
+        min-width: 50px;
+        color:white;
+        text-align: center;
+        font-family: "Open Sans";
+        font-size: small;
+
+   }
+
+
