@@ -10,10 +10,10 @@
 
 <body>
     <div class="container">
-        <nav class="mainMenu">
-            <div><a href="#aboutMe">ABOUT ME</a></div>
-            <div><a href="#knowledge">EDUCATION</a></div>
-            <div><a href="#portfolio">PORTFOLIO</a></div>
+        <nav class="menu">
+            <div class="menu__item"><a href="#aboutme">ABOUT ME</a></div>
+            <div class="menu__item"><a href="#knowledge">EDUCATION</a></div>
+            <div class="menu__item"><a href="#portfolio">PORTFOLIO</a></div>
         </nav>
         <header class="header">
             <div class="gday">G’DAY!</div>
@@ -21,9 +21,9 @@
             <div class="position">JUNIOR FRONTEND-DEVELOPER</div>
         </header>
         <main>
-            <a name="aboutMe"></a>
-            <section class="aboutMe">
-                <div class="whiteItem">
+            <a name="aboutme"></a>
+            <section class="aboutme">
+                <div class="white-block">
                     <img class="icon" src="./img/icons/pen.png" alt="Informashion about me">
                     <h2>About me</h2>
                     <div class="text">I have a specialized education, a technical mindset.
@@ -37,11 +37,12 @@
                     <h2>Hobbies</h2>
                     <div class="text">photography | confectionery art | reading</div>
                 </div>
-                <div class="shadowedItem">
+                <div class="block-shadowed">
                     <img class="foto" src="./img/foto.png" alt="Foto of Levanova Elena">
                     <h2>Name: Levanova Elena</h2>
                     <p>My location: Yerevan, Armenia</p>
                     <p>Email: ellevanova@gmail.com</p>
+                    <p>Phone: +79869137028 (use in Watsapp)</p>
                     <p>Phone: +37494330650 (use in Viber)</p>
                     <a href="/files/LevanovaElena_resume.pdf" download><img class="icon bottomIcon"
                             src="./img/icons/download.png" alt="Dounload file of resume"></a>
@@ -49,10 +50,10 @@
             </section>
             <a name="knowledge"></a>
             <section class="knowledge">
-                <div class="shadowedItem">
+                <div class="block-shadowed">
                     <img src="./img/icons/star.png" alt="my skills" class="icon">
                     <h2>Skills</h2>
-                    <div class="shadowText">I had experience of programming on
+                    <div class="text-shadow">I had experience of programming on
                         Borland C++ Builder, Delphi,
                         С#, Java (Jsp,servlet),
                         PHP.
@@ -70,7 +71,7 @@
 
                     <img class="icon" src="./img/icons/english.png" alt="Information about my English">
                     <h2>English</h2>
-                    <div class="shadowText">
+                    <div class="text-shadow">
                         I studied English( i have certificate).
                         And I’m learning English.
                         And I will study English.
@@ -78,11 +79,19 @@
                         But I have no active speaking experience.
                     </div>
                 </div>
-                <div class="whiteItem">
+                <div class="white-block">
                     <img class="icon" src="./img/icons/idea.png" alt="Information about my education">
                     <h2>Education</h2>
-                    <div class="itemsPlaceOfEducation">
-                        <div class="item">
+                    <div class="education">
+                        <div class="education__item">
+                            <img src="./img/icons/cirkle.png" alt="Place of my education" class="circle">
+                            <h3>The Rolling Scopes</h3>
+                            <div class="text">Course "JavaScript/Front-end"
+                            </div>
+                            <div class="years">2020-2021</div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="education__item">
                             <img src="./img/icons/cirkle.png" alt="Place of my education" class="circle">
                             <h3>HtmlAcademy, Stepik, Code.basics</h3>
                             <div class="text">Several courses in the web development:
@@ -92,7 +101,7 @@
                             <div class="line"></div>
                         </div>
 
-                        <div class="item">
+                        <div class="education__item">
                             <img src="./img/icons/cirkle.png" alt="Place of my education" class="circle">
                             <h3>Profi Internet, Profi Internet, setting up ads in Yandex. Direct.</h3>
                             <div class="text">Certificate
@@ -100,7 +109,7 @@
                             <div class="years">2019</div>
                             <div class="line"></div>
                         </div>
-                        <div class="item">
+                        <div class="education__item">
                             <img src="./img/icons/cirkle.png" alt="Place of my education" class="circle">
                             <h3>SAP CIS, accounting for fixed assets in SAP ERP.</h3>
                             <div class="text">Certificate
@@ -108,7 +117,7 @@
                             <div class="years">2014</div>
                             <div class="line"></div>
                         </div>
-                        <div class="item">
+                        <div class="education__item">
                             <img src="./img/icons/cirkle.png" alt="Place of my education" class="circle">
                             <h3>SAP CIS, Special purpose Ledger SAP ERP.</h3>
                             <div class="text">Certificate
@@ -116,7 +125,7 @@
                             <div class="years">2014</div>
                             <div class="line"></div>
                         </div>
-                        <div class="item">
+                        <div class="education__item">
                             <img src="./img/icons/cirkle.png" alt="Place of my education" class="circle">
                             <h3>Advanced training courses “Pl Sql Oracle”.</h3>
                             <div class="text">Certificate
@@ -124,7 +133,7 @@
                             <div class="years">2011</div>
                             <div class="line"></div>
                         </div>
-                        <div class="item">
+                        <div class="education__item">
                             <img src="./img/icons/cirkle.png" alt="" class="circle">
                             <h3>Kazan national research technical University named after A. N. Tupolev
                             </h3>
@@ -139,48 +148,77 @@
                 </div>
             </section class="knowledge">
             <a name="portfolio"></a>
-            <section class="another_information">
-                <div class="whiteItem">
+            <div class="white-block another-information">
+                <div class="portfolio-caption">
                     <img class="icon" src="./img/icons/code.png" alt="Code examples">
                     <h2>Code examples</h2>
+                </div>
+                <div class="portfolio-wrapper">
+                    <div class="prev">
+                        <div class="prev__img"></div>
+                    </div>
+                    <div class="portfolio">
+                        <div class="block-shadowed portfolio__item">
+                            <div class="portfolio-card">
+                                <img class="portfolio-card__icon" src="./img/icons/CMS.png" alt="On CMS WIX">
+                                <a href="#" class="portfolio-card__a text-shadow">Website on CMS Wix</a>
+                            </div>
+                            <div class="portfolio__image none">
+                                <img src="./img/portfolio/1.jpg" alt="On CMS WIX">
+                            </div>
+                        </div>
 
-                    <div class="itemMyWorks">
-                        <div class="shadowedItem">
-                            <a href="#" class="work1"></a>
-                            <img src="./img/icons/CMS.png" alt="On CMS WIX">
-                            <div class="shadowText">Website on CMS Wix</div>
 
+                        <div class="portfolio__item">
+                            <div class="block-shadowed portfolio__item-main">
+                                <a href="#" class="work2"></a>
+                                <img src="./img/icons/iconHtmlCss.png" alt="HTML CSS code">
+                                <div class="text-shadow">Website on HTML,CSS</div>
+                            </div>
                         </div>
-                        <div class="shadowedItem">
-                            <a href="#" class="work2"></a>
-                            <img src="./img/icons/iconHtmlCss.png" alt="HTML CSS code">
-                            <div class="shadowText">Website on HTML,CSS</div>
+
+                        <div class="portfolio__item">
+                            <div class="block-shadowed portfolio__item-main">
+                                <a href="#" class="work3"></a>
+                                <img src="./img/icons/iconHtmlCss.png" alt="HTML CSS code">
+                                <div class="text-shadow">Website on HTML,CSS</div>
+                            </div>
                         </div>
-                        <div class="shadowedItem">
-                            <a href="#" class="work3"></a>
-                            <img src="./img/icons/iconHtmlCss.png" alt="HTML CSS code">
-                            <div class="shadowText">Website on HTML,CSS</div>
+                        <div class="portfolio__item">
+                            <div class="block-shadowed portfolio__item-main">
+                                <a href="#" class="work4"></a>
+                                <img src="./img/icons/iconHtmlCss.png" alt="HTML CSS code">
+                                <div class="text-shadow">Website on HTML,CSS</div>
+                            </div>
                         </div>
-                        <div class="shadowedItem">
-                            <a href="#" class="work4"></a>
-                            <img src="./img/icons/iconHtmlCss.png" alt="HTML CSS code">
-                            <div class="shadowText">Website on HTML,CSS</div>
+                        <div class="portfolio__item">
+                            <div class="block-shadowed portfolio__item-main">
+                                <a href="#" class="work4"></a>
+                                <img src="./img/icons/iconHtmlCss.png" alt="HTML CSS code">
+                                <div class="text-shadow">Website on HTML,CSS</div>
+                            </div>
                         </div>
-                        <div class="shadowedItem">
-                            <a href="#" class="work5"></a>
-                            <div class="shadowText">Another ...</div>
+                        <div class="portfolio__item">
+                            <div class="block-shadowed portfolio__item-main">
+                                <a href="#" class="work5"></a>
+                                <div class="text-shadow">Another ...</div>
+                            </div>
                         </div>
                     </div>
+                    <div class="next">
+                        <div class="next__img"></div>
+                    </div>
                 </div>
-            </section>
+
+                </section>
         </main>
         <footer>
             <div class="footer">
-                <p>2020 | powered by Levanova Elena</p>
+                <p>2021 | powered by Levanova Elena</p>
             </div>
         </footer>
     </div>
-
+    <script src="./js/slider.js"></script>
 </body>
 
 </html>

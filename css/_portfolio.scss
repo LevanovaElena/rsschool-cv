@@ -1,0 +1,79 @@
+.portfolio {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+.portfolio-wrapper {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   width: 100%;
+   align-content: center;
+   align-items: center;
+}
+
+.portfolio-caption {
+   margin-left: 2rem;
+}
+.portfolio .block-shadowed {
+   width: 290px;
+   min-height: 267px;
+   margin-top: 15px;
+   text-align: center;
+   padding-top: 8%;
+}
+.portfolio__item {
+   display: flex;
+   position: relative;
+   cursor: pointer;
+}
+
+.portfolio-card {
+   width: 290px;
+}
+
+.portfolio-card__icon {
+   margin: 0 auto;
+   display: block;
+}
+.portfolio-card__a {
+   display: block;
+   text-decoration: none;
+}
+
+.prev,
+.next {
+   width: 35px;
+   height: 100%;
+   display: flex;
+   align-content: center;
+}
+.prev__img {
+   background: center url(../img/icons/prev.png) no-repeat;
+   background-size: contain;
+   width: 25px;
+   height: 25px;
+   margin: 0 auto;
+}
+.next__img {
+   background: center url(../img/icons/next.png) no-repeat;
+   background-size: contain;
+   width: 25px;
+   height: 25px;
+}
+.portfolio__image {
+   z-index: 999;
+   position: absolute;
+   top: 1px;
+   left: 1px;
+   width: 110%;
+   height: 110%;
+}
+.portfolio__image img {
+   width: 90%;
+   max-height: 90%;
+}
+.none {
+   display: none;
+}
