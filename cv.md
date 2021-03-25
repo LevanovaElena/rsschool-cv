@@ -1,5 +1,5 @@
 # Resume of Levanova Elena
-![My foto](https://hhcdn.ru/photo/463500731.jpeg?t=1599479454&h=9BMg3X-gaewAevkvXhynbw)
+![My foto](https://levanovaelena.github.io/rsschool-cv/img/foto.png)
 1.  My name is **Levanova Elena**
 2.  **My contacts**  
     >Email: ellevanova@gmail.com  
