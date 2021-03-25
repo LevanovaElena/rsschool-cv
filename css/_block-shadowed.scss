@@ -4,7 +4,13 @@
 
    padding: 15px;
    border: 1px solid black;
-   background: url(../img/shadowedItem_fon.png) center center/cover no-repeat;
+   background: repeating-linear-gradient(
+      -60deg,
+      rgb(175, 173, 173) 0,
+      rgb(221, 220, 220) 0px,
+      transparent 1px,
+      transparent 6px
+   );
 }
 .foto {
    display: block;
